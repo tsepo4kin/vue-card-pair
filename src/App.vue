@@ -1,15 +1,14 @@
 <template>
   <div class="container">
-    <div class="row bg-success">
-      <div class="col-lg bg-primary d-flex flex-wrap pb-2">
-        <app-card 
+    <h3 class="text-center">Vue card pair</h3>
+    <div class="row">
+        <app-card
+          class='col-lg-2 col-md-2 col-sm-3'
           :key='index'
           @cng='getCard'
           :index='index'
           v-for='(n, index) in num'
         ></app-card>
-
-      </div>
     </div>
   </div>
 </template>
@@ -20,7 +19,7 @@ import {mapActions} from 'vuex'
 export default {
   data () {
     return {
-      num: 8,
+      num: 18,
       card: [],
       a: [],
       keys: []
@@ -81,7 +80,6 @@ export default {
     getCard() {
       this.card = this.$store.getters.getCards;
       this.isDone;
-      console.log(this.keys);
     },
   },
   created() {
