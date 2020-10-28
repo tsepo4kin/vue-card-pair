@@ -1,6 +1,6 @@
 # vue-pair
 
-> A Vue.js project
+> Первый проект на VUE(присудствуют баги и говнокод)
 
 ## Build Setup
 
