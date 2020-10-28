@@ -85,7 +85,7 @@ export default {
   created() {
       for(let i = 0; i < Math.floor(this.num / 2); i++) {
         let genTitle = Math.round(Math.random()*9);
-        let genSuit = Math.round(Math.random()*4);
+        let genSuit = Math.round(Math.random()*3);
         this.card.push({
           title: genTitle,
           suit: genSuit,

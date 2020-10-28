@@ -34,7 +34,7 @@ export default {
 			}
 		},
     cardFace() {
-      if(this.card.suit == 4) {
+      if(this.card.suit == 0) {
         return 'spade'
       }else if(this.card.suit == 1) {
         return 'diamond'
